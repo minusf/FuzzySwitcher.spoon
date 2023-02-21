@@ -1,15 +1,14 @@
 --- === FuzzySwitcher ===
 ---
---- Live in the terminal and Spotlight too heavy for simple Applications
---- searching? This is a minimalist replacement that fzf-selects only
---- Applications.
+--- Live in the terminal and Spotlight too heavy for simple Application startup?
 ---
---- To hijack `cmd+space` with hammerspoon, disabling the spotlight keyboard
---- shortcut is not enough, it must be changed first to something else under
---- "Keyboard Shortcuts".
+--- Spotlight indexing every single file creepy too much?
 ---
---- Spotlight indexing must be turned off for every volume individually, e.g.
---- `sudo mdutil -i off /`
+--- Fed up with `cmd+tab` constantly just to hit that right icon in a looong list?
+---
+--- This is a minimalist replacement that fuzzy selects both running and
+--- not-yet-running Applications enabled by the amazing
+--- <http://www.hammerspoon.org/>
 ---
 --- Installation:
 --- in `~/.hammerspoon/init.lua`:
@@ -17,7 +16,14 @@
 --- hs.loadSpoon("FuzzySwitcher")
 --- spoon.FuzzySwitcher:bindHotkeys({show_switcher = {{"cmd"}, "space"}})
 --- spoon.FuzzySwitcher:start()
-
+---
+--- Disabling Spotlight
+--- To hijack `cmd+space` with hammerspoon, disabling the spotlight keyboard
+--- shortcut is not enough, it must be changed first to something else under
+--- "Keyboard Shortcuts".
+---
+--- Spotlight indexing must be turned off for every volume individually, e.g.
+--- `sudo mdutil -i off /`
 
 local obj={}
 obj.__index = obj
