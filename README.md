@@ -46,7 +46,7 @@ naturally narrow down the result to exactly one. For example on my system
 ## Configuration
 
 - `obj.app_folders`: folders to watch, by default `/Applications`,
-  `/System/Applications` and `~/Applications`
+  `/System/Applications`, `/System/Applications/Utilities` and `~/Applications`
 - `obj.app_ignore_list`: list of applications to ignore, e.g. `Siri`
 
 ## Disabling Spotlight
