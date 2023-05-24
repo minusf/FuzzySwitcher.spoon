@@ -35,6 +35,7 @@ obj.__index = obj
 obj.app_folders = {
   "/Applications",
   "/System/Applications",
+  "/System/Applications/Utilities",
   -- pwd for the spoon is ~/.hammerspoon, so this equals to ~/Applications
   "../Applications",
 }
@@ -49,9 +50,7 @@ obj.app_ignore_list = {
 }
 
 -- The level of subfolders to search for Applications
--- Going above 2 will include Frameworks and Resources bundled with particular Applications.
--- Going under 2 will miss all of Utilities/ and similarly installed Applications.
-obj.folder_depth = 2
+obj.folder_depth = 1
 
 -- Remember last selection in the popup
 obj.remember_last = true
